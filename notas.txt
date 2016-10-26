@@ -1,8 +1,11 @@
 
 # http://arachnoid.com/modelines/
 
+# http://webglreport.com/?v=2
+
 # xrandr -q
 
+# https://cesiumjs.org/NewYork/index.html
 
 Section "Monitor"
 	Identifier "Monitor0"
