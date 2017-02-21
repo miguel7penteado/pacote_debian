@@ -1,5 +1,6 @@
 # Compilando um Kernel através de um pacote Deb
 
+
 ```sh
 
 apt-get install build-essential fakeroot
