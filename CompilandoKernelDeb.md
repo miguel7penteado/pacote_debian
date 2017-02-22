@@ -13,8 +13,13 @@ apt-get source linux-image-$(uname -r)
 
 cd linux-*
 
-fakeroot debian/rules source
+# fakeroot debian/rules source
 
-fakeroot make -f debian/rules.gen binary-arch_amd64
+# fakeroot make -f debian/rules.gen binary-arch_amd64
+# Edite o ChangeLog
+dch -i
+# Faça a compilação com o uso do dpkg-buildpackage porque este seta as variáveis que você
+# ve na saida do comando dpkg-architecture
+fakeroot dpkg-buildpackage -d -b
 
 ```
