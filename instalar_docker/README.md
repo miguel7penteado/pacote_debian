@@ -6,6 +6,10 @@
 Iremos instalar os pacotes do debian `s-dkms` `aufs-tools` `cgroupfs-mount` e o `docker-ce`.
 
 #### 2.1. Chave GPG
+Adicione a chave do repositorio para o apt poder acessar os pacotes do mesmo
+```bash
+curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID")/gpg | sudo apt-key add -
+```
 
 #### 2.2. Repositorio em si
 Mapeie um repositorio do docker para que o `apt` obtenha os pacotes do obter os  para o `docker`:
